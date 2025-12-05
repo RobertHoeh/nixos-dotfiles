@@ -1,0 +1,79 @@
+* {
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#clock,
+#tray,
+#mpris{
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+#workspaces {
+    margin: 0 4px;
+    color: #ffffff;
+}
+
+#clock, #tray, #workspaces, #outer-box, #mpris{
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, #000000 50%, #212048);
+    /*border: 3px solid #212048;*/
+    background-color: #000000;
+    border: 1px solid white;
+}
+
+#clock, #tray, #workspaces, #mpris {
+    border: none;
+}
+
+#window {
+    all: unset;
+}
+
+#input {
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+}
+
+#entry {
+    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    border: none;
+    background: none;
+}
+
+#entry:selected {
+    border-top: none;
+    border-bottom: none;
+    background-color: #212048;
+    outline: none;
+    border-radius: 5px;
+}
+
+#scroll {
+   background-color: transparent;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
